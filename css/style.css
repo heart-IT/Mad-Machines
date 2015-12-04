@@ -1,0 +1,169 @@
+/*  Stylesheet */
+/**
+ *
+ * Made By Mad Machines
+ */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	background: #1c1c38;
+	color: white;
+
+	font-family: 'Lato', sans-serif;
+}
+
+header {
+
+	position: absolute!important;
+	top: 0;
+	left: 0;
+
+	transition: all 0.5s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+	font-weight: 300;
+	font-style: normal;
+	z-index: 10;
+
+	height: 100px!important;
+	width: 100%;
+}
+
+header > nav {
+	transition: all 0.5s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+	height: 100px;
+	line-height: 100px;
+}
+
+nav {
+	background-color: rgb(25, 25, 51)!important;
+	/*background-color: rgba(0, 0, 0, 0.1)!important;*/
+	/*background-color: transparent!important;*/
+	box-shadow: none!important;
+}
+
+nav .brand-logo {
+	font-weight: bold;
+    text-transform: uppercase;
+    color: #ED3952;
+
+	margin-left: 2.8125em;
+
+	font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 993px) {
+	nav .brand-logo {
+		margin-left: 0;
+	}
+}
+
+nav ul {
+	margin-right: 2.8125em;
+}
+
+nav ul li a {
+	margin: 0 1.25em;
+	font-size: .8125em;
+	letter-spacing: .0625em;
+}
+
+main {
+	height: 100%;
+	width: 100%;
+	position: relative;
+
+	padding-top: 100px;
+}
+
+#home,
+#portfolio,
+#about {
+	height: 100%;
+	width: 100%;
+
+	/*min-height: 500px;*/
+
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+	color: white;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+
+	text-align: center;
+}
+
+.sub-header {
+	text-align: center;
+	line-height: 150%;
+}
+
+.sub-header-2 {
+	line-height: 150%;
+	text-align: center;
+	font-weight: 300;
+}
+
+.red-color {
+	color: #ED3952;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.block {
+	display: block;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+#home .divider {
+	width: 20%;
+	margin-top: 25px;
+	background-color: #f0f0f0!important;
+}
+
+#home .btn {
+	margin-top: 25px;
+	background-color: #ED3952;
+	color: #fff;
+}
+
+#about p {
+	max-width: 1100px;
+    margin: 0 auto;
+    font-size: 1.3em;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.particles-js-canvas-el {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.hire-us {
+	    border: 1px solid #fff;
+    display: initial;
+    padding: 10px;
+}
