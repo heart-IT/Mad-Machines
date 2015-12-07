@@ -20,13 +20,13 @@
 	<header class="navbar-fixed">
 		<nav>
 			<div class="nav-wrapper">
-				<a href="#" class="brand-logo">Mad machines</a>
+				<a href="#home" class="brand-logo">Mad machines</a>
 
 				<ul class="right hide-on-med-and-down">
-					<li><a href="#">About</a></li>
-					<li><a href="#">Work</a></li>
-					<li><a href="#">Culture</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Work</a></li>
+					<li><a href="#careers">Culture</a></li>
+					<li><a href="#contacts">Contact</a></li>
 					<li><a href="#" class="hire-us">Hire Us</a></li>
 				</ul>
 
@@ -34,6 +34,7 @@
 		</nav>
 	</header>
 
+	<div id="particles"></div>
 	<main id="main">
 		<div id="home">
 			<h1 class="header">We're an independent<span class="red-color block">design and development</span>agency located in <span class="red-color">Delhi</span>.</h1>
@@ -86,10 +87,11 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script src="js/particles.js"></script>
+	<script src="js/jump.js"></script>
 
 	<script>
 		$(document).ready(function() {
-			particlesJS("main", {
+			particlesJS("particles", {
   "particles": {
     "number": {
       "value": 60,
@@ -201,6 +203,7 @@
 });
 		})
 	</script>
+	<script src="js/init.js"></script>
 </body>
 
 </html>

@@ -1,17 +1,14 @@
-(function($){
-  $(function(){
+/* global $ */
+// $(document).ready(function() {
 
-    $(".nav-link").click(function(e) {
+	var Jump= new Jump();
 
-		var $targetDiv = $($(this).attr('href'));
-		$targetDiv.velocity("scroll", 1000).velocity({ opacity: 1 });
+	$('nav a').click(function(e) {
 
-		$(this).parent().addClass('active').siblings().removeClass('active');
-
-		return false;
+		Jump.jump($(this).attr('href'), {
+			duration: 1000,
+		});
+		e.preventDefault();
 	});
 
-	$('.slider').slider({full_width: true});
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+// });
