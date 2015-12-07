@@ -14,57 +14,32 @@ body {
 	background: #1c1c38;
 	color: white;
 
-	font-size: 1rem;
-	font-size: 16px;
-	font-size: 100%;
 	font-family: 'Lato', sans-serif;
 }
 
-@media (max-width: 900px) {
-	body {
-		font-size: 12px;
-		font-size: 0.75rem;
-		font-size: 75%;
-	}
-}
-
 header {
-	position: absolute!important;
-	top: 0;
-	left: 0;
-
-	transition: all 0.5s cubic-bezier(0.190, 1.000, 0.220, 1.000);
-	font-weight: 300;
-	font-style: normal;
-	z-index: 10;
-
 	height: 100px!important;
 	width: 100%;
+	z-index: 10;
 }
 
 header > nav {
-	transition: all 0.5s cubic-bezier(0.190, 1.000, 0.220, 1.000);
 	height: 100px;
 	line-height: 100px;
 }
 
 nav {
 	background-color: rgb(25, 25, 51)!important;
-	/*background-color: rgba(0, 0, 0, 0.1)!important;*/
-	/*background-color: transparent!important;*/
 	box-shadow: none!important;
 }
 
 nav .brand-logo {
-	font-weight: bold;
+	font-weight: 700;
     text-transform: uppercase;
     color: #ED3952;
 
 	margin-left: 2.8125em;
-
 	font-family: 'Montserrat', sans-serif;
-
-	/*line-height: 125%;*/
 	letter-spacing: -4px;
 }
 
@@ -83,8 +58,7 @@ nav ul li a {
 	font-size: .8125em;
 	letter-spacing: .0625em;
 
-	font-weight: 700;
-	transition: all 500ms ease;
+	transition: all 1000ms ease-in;
 }
 
 nav ul li.active, nav ul li:hover {
@@ -95,62 +69,52 @@ nav ul li.active a, nav ul li:hover a {
 	color: #ED3952;
 }
 
+#particles {
+	z-index: 1;
+}
+
+.particles-js-canvas-el {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+
 main {
 	height: 100%;
 	width: 100%;
 	position: relative;
-
-	padding-top: 100px;
+	z-index: 9;
 }
 
-#about,
-#portfolio,
-#what-we-do,
-#careers,
-#contact {
-	/*height: 100%;*/
-	/*width: 100%;*/
-
-	padding: 20px 0;
-	min-height: 600px;
+main > div {
+	width: 100%;
 
 	text-align: center;
-	color: white;
-
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-
 	-ms-flex-align: center;
 	-webkit-align-items: center;
 	-webkit-box-align: center;
-
 	align-items: center;
     flex-direction: column;
     justify-content: center;
 }
 
-@media screen and (min-width: 800px) {
-    #about,
-	#portfolio,
-	#what-we-do,
-	#careers,
-	#contact {
+@media (min-width: 993px) {
+	main > div {
 		height: 100%;
-		width: 100%;
+		padding-top: 100px;
 	}
 }
 
-
 main > div h1 {
-	/*color: white;*/
-	font-weight: 700;
 	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
 	line-height: 125%;
 	letter-spacing: -4px;
-
-	/*text-align: center;*/
-
 	max-width: 900px;
 	margin: 20px auto 40px;
 }
@@ -161,11 +125,6 @@ main > div h1 {
 	}
 }
 
-main > div h4 {
-	line-height: 140%;
-	letter-spacing: -2px;
-}
-
 main > div p {
 	max-width: 1100px;
 	margin: 20px auto;
@@ -173,25 +132,13 @@ main > div p {
 	line-height: 150%;
 	font-size: 1.3em;
 	letter-spacing: 0.5px;
-	/*text-align: center;*/
 }
 
 main > div .btn {
-	/*text-align: center;*/
-	margin: 25px 10px auto;
+	margin: 15px 10px;
 	background-color: #fff;
 	color: #ED3952;
 	font-weight: bold;
-}
-
-main > div .btn:hover {
-	background-color: #ED3952;
-	color: white;
-}
-
-main > div .material-icons {
-	display: block;
-	font-size: 5em;
 }
 
 main > div img {
@@ -199,52 +146,82 @@ main > div img {
 	margin: 0 auto;
 }
 
-
-
-/*#what-we-do p {
-
-
-    font-size: 1.3em;
-    font-weight: 300;
-    font-style: italic;
-}*/
-
-.sub-header-2 {
-	line-height: 150%;
-	text-align: center;
-	font-weight: 300;
+main > div .btn:hover {
+	background-color: #ED3952;
+	color: white;
 }
+
+.specialize-row {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
 
 .red-color {
 	color: #ED3952;
 	font-family: 'Montserrat', sans-serif;
 }
 
-.block {
-	display: block;
-}
-
-.inline-block {
-	display: inline-block;
-}
-
 .uppercase {
 	text-transform: uppercase;
 }
 
-
-.particles-js-canvas-el {
-	position: fixed;
-	top: 0;
-	left: 0;
-}
-
-.hire-us {
-	    border: 1px solid #fff;
-    display: initial;
-    padding: 10px;
-}
-
 #google-map {
 	min-height: 300px;
+	WIDTH: 100%;
+	margin: 0 auto;
+	color: #1c1c38;
+	text-align: left;
+
+}
+
+#contact .address-col{
+	text-align: left;
+	font-size: 1em;
+	padding: 0 20px;
+}
+
+#contact .address-col a,
+#contact .address-col h5 {
+	color: #ED3952;
+	font-weight: bold;
+}
+
+#contact .address-col address {
+	font-style: normal;
+}
+
+#contact .address-col p{
+	font-size: 1em;
+}
+
+#contact .address-col li{
+	display: inline-block;
+	margin: auto 10px;
+}
+
+input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+	    border-bottom: 1px solid #ED3952;
+    box-shadow: 0 1px 0 0 #ED3952;
+}
+
+input[type=text]:focus:not([readonly])+label, input[type=password]:focus:not([readonly])+label, input[type=email]:focus:not([readonly])+label, input[type=url]:focus:not([readonly])+label, input[type=time]:focus:not([readonly])+label, input[type=date]:focus:not([readonly])+label, input[type=datetime-local]:focus:not([readonly])+label, input[type=tel]:focus:not([readonly])+label, input[type=number]:focus:not([readonly])+label, input[type=search]:focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label {
+	color: #ED3952;
+}
+
+footer {
+	position: fixed;
+	height: 40px;
+	bottom: 0;
+	width: 100%;
+	z-index: 9;
+
+	margin:0!important ;
+	padding: 0!important;
+
+	background-color: rgb(25, 25, 51)!important;
+}
+
+footer a {
+	color: white!Important;
 }
