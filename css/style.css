@@ -14,7 +14,18 @@ body {
 	background: #1c1c38;
 	color: white;
 
+	font-size: 1rem;
+	font-size: 16px;
+	font-size: 100%;
 	font-family: 'Lato', sans-serif;
+}
+
+@media (max-width: 900px) {
+	body {
+		font-size: 12px;
+		font-size: 0.75rem;
+		font-size: 75%;
+	}
 }
 
 header {
@@ -52,6 +63,9 @@ nav .brand-logo {
 	margin-left: 2.8125em;
 
 	font-family: 'Montserrat', sans-serif;
+
+	/*line-height: 125%;*/
+	letter-spacing: -4px;
 }
 
 @media (max-width: 993px) {
@@ -68,6 +82,17 @@ nav ul li a {
 	margin: 0 1.25em;
 	font-size: .8125em;
 	letter-spacing: .0625em;
+
+	font-weight: 700;
+	transition: all 500ms ease;
+}
+
+nav ul li.active, nav ul li:hover {
+	background-color: transparent!Important;
+}
+
+nav ul li.active a, nav ul li:hover a {
+	color: #ED3952;
 }
 
 main {
@@ -78,13 +103,19 @@ main {
 	padding-top: 100px;
 }
 
-#home,
+#about,
 #portfolio,
-#about {
-	height: 100%;
-	width: 100%;
+#what-we-do,
+#careers,
+#contact {
+	/*height: 100%;*/
+	/*width: 100%;*/
 
-	/*min-height: 500px;*/
+	padding: 20px 0;
+	min-height: 600px;
+
+	text-align: center;
+	color: white;
 
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -99,18 +130,84 @@ main {
     justify-content: center;
 }
 
-.header {
-	color: white;
+@media screen and (min-width: 800px) {
+    #about,
+	#portfolio,
+	#what-we-do,
+	#careers,
+	#contact {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+
+main > div h1 {
+	/*color: white;*/
 	font-weight: 700;
 	font-family: 'Montserrat', sans-serif;
+	line-height: 125%;
+	letter-spacing: -4px;
 
-	text-align: center;
+	/*text-align: center;*/
+
+	max-width: 900px;
+	margin: 20px auto 40px;
 }
 
-.sub-header {
-	text-align: center;
+@media (max-width: 603px) {
+	main > div h1 {
+		font-size: 3rem;
+	}
+}
+
+main > div h4 {
+	line-height: 140%;
+	letter-spacing: -2px;
+}
+
+main > div p {
+	max-width: 1100px;
+	margin: 20px auto;
+	font-weight: 400;
 	line-height: 150%;
+	font-size: 1.3em;
+	letter-spacing: 0.5px;
+	/*text-align: center;*/
 }
+
+main > div .btn {
+	/*text-align: center;*/
+	margin: 25px 10px auto;
+	background-color: #fff;
+	color: #ED3952;
+	font-weight: bold;
+}
+
+main > div .btn:hover {
+	background-color: #ED3952;
+	color: white;
+}
+
+main > div .material-icons {
+	display: block;
+	font-size: 5em;
+}
+
+main > div img {
+	display: block;
+	margin: 0 auto;
+}
+
+
+
+/*#what-we-do p {
+
+
+    font-size: 1.3em;
+    font-weight: 300;
+    font-style: italic;
+}*/
 
 .sub-header-2 {
 	line-height: 150%;
@@ -135,25 +232,6 @@ main {
 	text-transform: uppercase;
 }
 
-#home .divider {
-	width: 20%;
-	margin-top: 25px;
-	background-color: #f0f0f0!important;
-}
-
-#home .btn {
-	margin-top: 25px;
-	background-color: #ED3952;
-	color: #fff;
-}
-
-#about p {
-	max-width: 1100px;
-    margin: 0 auto;
-    font-size: 1.3em;
-    font-weight: 300;
-    font-style: italic;
-}
 
 .particles-js-canvas-el {
 	position: fixed;
@@ -165,4 +243,8 @@ main {
 	    border: 1px solid #fff;
     display: initial;
     padding: 10px;
+}
+
+#google-map {
+	min-height: 300px;
 }
