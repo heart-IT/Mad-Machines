@@ -57,9 +57,13 @@ function highlightNav() {
 
 function goToSlide(slideHref) {
 	Jump.jump('#' + slideHref, {
-		duration: 1000,
+		duration: 800,
 		callback: function () {
 			isAnimating = false;
+		},
+		easing: function(t, b, c, d) {
+			if ((t/=d/2) < 1) return c/2*t*t*t*t + b;
+		return -c/2 * ((t-=2)*t*t*t - 2) + b;
 		}
 	});
 	currentSlide = slideHref;

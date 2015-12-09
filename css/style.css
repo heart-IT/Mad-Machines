@@ -11,36 +11,36 @@ html, body {
 }
 
 body {
-	background: #1c1c38;
+	background: #04092d;
 	color: white;
 
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', serif;
 }
 
 header {
-	height: 100px!important;
+	height: 60px!important;
 	width: 100%;
 	z-index: 10;
 }
 
 header > nav {
-	height: 100px;
-	line-height: 100px;
+	height: 60px;
+	line-height: 60px;
 }
 
 nav {
-	background-color: rgb(25, 25, 51)!important;
+	background-color: rgb(4, 8, 41)!important;
 	box-shadow: none!important;
 }
 
 nav .brand-logo {
 	font-weight: 700;
     text-transform: uppercase;
-    color: #ED3952;
+    color: #FD1339;
 
 	margin-left: 2.8125em;
 	font-family: 'Montserrat', sans-serif;
-	letter-spacing: -4px;
+	letter-spacing: -2px;
 }
 
 @media (max-width: 993px) {
@@ -66,7 +66,7 @@ nav ul li.active, nav ul li:hover {
 }
 
 nav ul li.active a, nav ul li:hover a {
-	color: #ED3952;
+	color: #FD1339;
 }
 
 #particles {
@@ -106,7 +106,8 @@ main > div {
 @media (min-width: 993px) {
 	main > div {
 		height: 100%;
-		padding-top: 100px;
+		padding-top: 60px;
+		padding-bottom: 40px;
 	}
 }
 
@@ -137,7 +138,7 @@ main > div p {
 main > div .btn {
 	margin: 15px 10px;
 	background-color: #fff;
-	color: #ED3952;
+	color: #FD1339;
 	font-weight: bold;
 }
 
@@ -147,7 +148,7 @@ main > div img {
 }
 
 main > div .btn:hover {
-	background-color: #ED3952;
+	background-color: #FD1339;
 	color: white;
 }
 
@@ -158,7 +159,7 @@ main > div .btn:hover {
 
 
 .red-color {
-	color: #ED3952;
+	color: #FD1339;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -181,9 +182,15 @@ main > div .btn:hover {
 	padding: 0 20px;
 }
 
+#contact  .address-col h5 {
+    text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: -2px;
+}
+
 #contact .address-col a,
 #contact .address-col h5 {
-	color: #ED3952;
+	color: #FD1339;
 	font-weight: bold;
 }
 
@@ -201,12 +208,12 @@ main > div .btn:hover {
 }
 
 input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
-	    border-bottom: 1px solid #ED3952;
-    box-shadow: 0 1px 0 0 #ED3952;
+	    border-bottom: 1px solid #FD1339;
+    box-shadow: 0 1px 0 0 #FD1339;
 }
 
 input[type=text]:focus:not([readonly])+label, input[type=password]:focus:not([readonly])+label, input[type=email]:focus:not([readonly])+label, input[type=url]:focus:not([readonly])+label, input[type=time]:focus:not([readonly])+label, input[type=date]:focus:not([readonly])+label, input[type=datetime-local]:focus:not([readonly])+label, input[type=tel]:focus:not([readonly])+label, input[type=number]:focus:not([readonly])+label, input[type=search]:focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label {
-	color: #ED3952;
+	color: #FD1339;
 }
 
 footer {
@@ -219,7 +226,7 @@ footer {
 	margin:0!important ;
 	padding: 0!important;
 
-	background-color: rgb(25, 25, 51)!important;
+	background-color: rgb(4, 8, 41)!important;
 }
 
 footer a {
